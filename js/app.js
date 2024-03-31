@@ -2,7 +2,7 @@ let textoent = document.querySelector(".texto-entradajs");
 let textosal = document.querySelector(".texto-salida");
 let quitarimg = document.querySelector(".quitarimg");
 let quitarh2 = document.querySelector(".quitarh2");
-
+let btncopiar = document.querySelector(".copy");
 let llaveEncriptar = [
   ["e", "enter"],
   ["i", "imes"],
@@ -25,6 +25,7 @@ function btnEncriptar() {
     quitarimg.remove();
     quitarh2.remove();
     textoent.value = "";
+    btncopiar.style.display="block";
   } 
 }
 
@@ -42,6 +43,9 @@ function btnDesencriptar() {
     textosal.innerHTML = texto;
     quitarimg.remove();
     quitarh2.remove();
+    textoent.value = "";
+    btncopiar.style.display="block";
+
   }
 }
 function VerificarMinusculas() {
@@ -69,4 +73,8 @@ function desencriptarTexto(frase) {
     frase = frase.replace(regex, par[0]);
   });
   return frase;
+}
+
+function copiar(){
+  navigator.clipboard.writeText(textosal.textContent);
 }
