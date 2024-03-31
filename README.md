@@ -3,7 +3,9 @@
 
 ## Construye un encriptador de texto con Javascript 
 
-* Podrás encontrar la pagina desplegada [aquí](https://angelov12.github.io/Encriptador-Oracle-One-G6/)
+* Podrás encontrar la pagina desplegada <a href="https://angelov12.github.io/Encriptador-Oracle-One-G6/" target="_blank">aquí</a>
+
+
 
 ### Descripción del proyecto:
 
