@@ -58,6 +58,7 @@ html {
     color: var(--ColorSecundario);
     margin-top: 2rem;
     font-size: 2.5rem;
+    
 }
 .texto-entrada:focus{
     outline: none;
@@ -154,6 +155,7 @@ html {
     .aside-contenido{
         height: 14em;
         width: 32rem;
+        padding: 1rem;
     }
     .imagen{
         display: none;
