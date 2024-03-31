@@ -4,13 +4,12 @@ let quitarimg = document.querySelector(".quitarimg");
 let quitarh2 = document.querySelector(".quitarh2");
 
 let llaveEncriptar = [
+  ["e", "enter"],
   ["i", "imes"],
   ["a", "ai"],
-  ["e", "enter"],
   ["o", "ober"],
   ["u", "ufat"],
 ];
-
 function btnEncriptar() {
   const tieneMayusculas = /[A-Z]/.test(textoent.value);
   const tieneCaracteresEspeciales = /[^a-z\s]/.test(textoent.value);
@@ -26,9 +25,7 @@ function btnEncriptar() {
     quitarimg.remove();
     quitarh2.remove();
     textoent.value = "";
-  } else {
-    alert("Por favor ingrese el texto que desea encriptar.");
-  }
+  } 
 }
 
 function btnDesencriptar() {
@@ -45,8 +42,6 @@ function btnDesencriptar() {
     textosal.innerHTML = texto;
     quitarimg.remove();
     quitarh2.remove();
-  } else {
-    alert("Por favor ingrese el texto que desea desencriptar.");
   }
 }
 function VerificarMinusculas() {
