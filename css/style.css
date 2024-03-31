@@ -152,7 +152,7 @@ html {
 }
 @media (max-width: 650px) {
     .aside-contenido{
-        height: 20rem;
+        height: 14em;
         width: 32rem;
     }
     .imagen{
