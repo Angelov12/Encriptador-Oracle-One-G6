@@ -73,7 +73,7 @@ html {
     border: none;
     background-color: var(--ColorPrincipal);
     color: var(--ColorSecundario);
-    margin-top: 2rem;
+    margin-top: 3rem;
     font-size: 2.5rem;
     
 }
@@ -94,7 +94,7 @@ html {
     }
     .texto-entrada{
         width: 30rem;
-        height: 20rem;
+        height: 15rem;
     }
 
 }
@@ -136,6 +136,9 @@ html {
 
 }
 .aside{
+    margin-top: 2.5rem;
+    padding: 1rem;
+    height: 45rem;
     background-color: var(--Blanco);
     border-radius: 2.5rem;
     box-shadow: -9px 7px 18px -6px rgba(0,0,0,0.51);
@@ -144,14 +147,12 @@ html {
 }
 .aside-contenido{
     display: flex;
-    padding: 2rem;
-    margin-top: 3rem;
+    padding: 1rem 2rem;
     flex-direction: column;
     justify-content: center;
-    height:44rem;
+    height: 37rem;
     width: 32rem;
     overflow-y: auto;
-    overflow-x: hidden;
     word-wrap: break-word;
 
 }
@@ -171,20 +172,30 @@ html {
     font-size: 1.2rem;
 }
 @media (max-width: 650px) {
+  .aside{
+    margin-top: 1.5rem;
+    max-height: 22rem;
+    padding: 2rem 2rem;
+  }
     .aside-contenido{
+
+      justify-content: center;
         height: 14rem;
-        width: 32rem;
+        width: 30rem;
         padding: 1rem;
+        
     }
     .imagen{
         display: none;
+    }
+    .footer{
+      flex-direction: column;
     }
 
 }
 .contenedor-boton{ 
     padding: 1rem;
     margin-left: 1rem;
-    margin-bottom: 1rem;
 }
 
   
@@ -282,4 +293,20 @@ html {
   .copy:hover svg {
     color: #4c8aeb;
     
+  }
+  .footer{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    padding: 4.5rem;
+    margin-top: 2.5rem;
+    gap: 1rem;
+    
+  }
+  .footer p{
+    font-size: 1.12rem;
+  }
+  .footer a img{
+    height: 2rem;
   }
